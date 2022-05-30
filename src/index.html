@@ -1,97 +1,691 @@
 <!DOCTYPE html>
 <html>
-
-<head>
+  <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link href="/dist/output.css" rel="stylesheet" />
-</head>
+  </head>
 
-<body>
-    <div class="flex justify-between items-center bg-amber-600 px-4">
-        <nav class="py-1">
+  <body class="min-h-[1000px]">
+    <div class="bg-primary h-m-6 py-1">
+      <div class="container mx-auto">
+        <div
+          class="flex flex-col md:flex-row justify-between items-center px-4 text-xs"
+        >
+          <nav class="py-1">
             <ul class="flex">
-                <li class="mr-3 inline-block">
-                    <a href="tel:23481090002275">
-                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 inline" viewBox="0 0 20 20"
-                            fill="currentColor">
-                            <path
-                                d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z" />
-                        </svg>
-                        +2348109000275
-                    </a>
-                </li>
-                <li class="inline-block">
-                    <a href="mailto:emmanueldiogu@gmail.com">
-                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 inline" viewBox="0 0 20 20"
-                            fill="currentColor">
-                            <path d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z" />
-                            <path d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z" />
-                        </svg>
-                        emmanueldiogu@gmail.com
-                    </a>
-                </li>
+              <li class="mr-3 inline-block">
+                <a href="tel:23481090002275">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="h-3 w-3 inline"
+                    viewBox="0 0 20 20"
+                    fill="currentColor"
+                  >
+                    <path
+                      d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z"
+                    />
+                  </svg>
+                  +2348109000275
+                </a>
+              </li>
+              <li class="inline-block">
+                <a href="mailto:emmanueldiogu@gmail.com">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="h-3 w-3 inline"
+                    viewBox="0 0 20 20"
+                    fill="currentColor"
+                  >
+                    <path
+                      d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z"
+                    />
+                    <path
+                      d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z"
+                    />
+                  </svg>
+                  emmanueldiogu@gmail.com
+                </a>
+              </li>
             </ul>
-        </nav>
-        <nav>
+          </nav>
+          <nav>
             <ul class="flex">
-                <li class="inline-block mr-3">
-                    <a href="#" class="px-2"><img src="../dist/img/facebook.png" alt="facebook" class="w-5"></a>
-                </li>
-                <li class="inline-block mr-3">
-                    <a href="#" class="px-2"><img src="../dist/img/twitter.png" alt="twitter" class="w-5"></a>
-                </li>
-                <li>
-                    <a href="#" class="px-2"><img src="../dist/img/instagram.png" alt="instagram" class="w-5"></a>
-                </li>
+              <li class="inline-block mr-3">
+                <a href="#"
+                  ><img
+                    src="../dist/img/facebook.png"
+                    alt="facebook"
+                    class="w-3"
+                /></a>
+              </li>
+              <li class="inline-block mr-3">
+                <a href="#"
+                  ><img src="../dist/img/twitter.png" alt="twitter" class="w-3"
+                /></a>
+              </li>
+              <li class="inline-block">
+                <a href="#"
+                  ><img
+                    src="../dist/img/instagram.png"
+                    alt="instagram"
+                    class="w-3"
+                /></a>
+              </li>
             </ul>
-        </nav>
-    </div>
-    <header class="flex justify-between items-center shadow-md h-16 px-4">
-        <div>
-            <a href="/" class="text-2xl font-bold">LOGO</a>
+          </nav>
         </div>
-        <nav>
+      </div>
+    </div>
+    <header
+      class="bg-white shadow-md sticky top-0 w-full transition-all duration-200 z-10"
+    >
+      <div class="container mx-auto">
+        <div class="flex justify-between items-center h-16 px-4 relative">
+          <div class="flex items-center">
+            <button class="hidden md:block mr-3">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="h-6 w-6"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+                stroke-width="2"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M4 6h16M4 12h16m-7 6h7"
+                />
+              </svg>
+            </button>
+            <a href="/" class="text-2xl font-bold w-full">
+              <img
+                src="../dist/img/asoebi-logo.png"
+                alt="asoebi-logo"
+                class="w-full h-9 md:h-12"
+              />
+            </a>
+          </div>
+          <div>
+            <button class="md:hidden">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="h-6 w-6"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+                stroke-width="2"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M4 6h16M4 12h16m-7 6h7"
+                />
+              </svg>
+            </button>
+            <nav
+              class="absolute mt-16 bg-white shadow-md left-0 top-0 w-3/4 h-screen md:relative md:h-full md:w-full md:mt-0 md:shadow-none"
+            >
+              <ul class="flex flex-col py-1 md:py-0 md:flex-row items-center">
+                <li class="md:mb-0 md:mr-3 mb-2 w-full px-4 md:px-0">
+                  <a
+                    href="#"
+                    class="inline-block w-full hover:bg-slate-400 px-2 py-2"
+                    >ABOUT</a
+                  >
+                </li>
+                <li class="md:mb-0 md:mr-3 mb-2 w-full px-4 md:px-0">
+                  <a
+                    href="#"
+                    class="inline-block w-full hover:bg-slate-400 px-2 py-2"
+                    >COLLECTION</a
+                  >
+                </li>
+                <li class="md:mb-0 md:mr-3 mb-2 w-full px-4 md:px-0">
+                  <a
+                    href="#"
+                    class="inline-block w-full hover:bg-slate-400 px-2 py-2"
+                    >ROOM</a
+                  >
+                </li>
+                <li class="md:mb-0 md:mr-3 mb-2 w-full px-4 md:px-0">
+                  <a
+                    href="#"
+                    class="inline-block w-full hover:bg-slate-400 px-2 py-2"
+                    >EVENT</a
+                  >
+                </li>
+                <li class="md:mb-0 md:mr-3 mb-2 w-full px-4 md:px-0">
+                  <a
+                    href="#"
+                    class="inline-block w-full hover:bg-slate-400 px-2 py-2"
+                    >CONTACT</a
+                  >
+                </li>
+              </ul>
+            </nav>
+          </div>
+          <nav class="">
             <ul class="flex">
-                <li><a href="#">ABOUT</a></li>
-                <li><a href="#">COLLECTION</a></li>
-                <li><a href="#">ROOM</a></li>
-                <li><a href="#">EVENT</a></li>
-                <li><a href="#">CONTACT</a></li>
+              <li>
+                <a href="#" class="inline-block p-2 mr-3">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="h-6 w-6 hover:text-primary"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                    stroke-width="2"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"
+                    />
+                  </svg>
+                </a>
+              </li>
+              <li>
+                <a href="#" class="inline-block p-2 mr-3">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="h-6 w-6 hover:text-primary"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                    stroke-width="2"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"
+                    />
+                  </svg>
+                </a>
+              </li>
+              <li>
+                <a href="#" class="inline-block p-2 mr-3 relative">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="h-6 w-6 hover:text-primary"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                    stroke-width="2"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z"
+                    />
+                  </svg>
+                  <span
+                    class="absolute top-0 right-0 transform text-xs bg-primary text-white text-center px-1 pb-1 rounded-full h-5 w-5"
+                    >0</span
+                  >
+                </a>
+              </li>
             </ul>
-        </nav>
-        <nav>
-            <ul class="flex">
-                <li>
-                    <a href="#">
-                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24"
-                            stroke="currentColor" stroke-width="2">
-                            <path stroke-linecap="round" stroke-linejoin="round"
-                                d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
-                        </svg>
-                    </a>
-                </li>
-                <li>
-                    <a href="#">
-                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24"
-                            stroke="currentColor" stroke-width="2">
-                            <path stroke-linecap="round" stroke-linejoin="round"
-                                d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" />
-                        </svg>
-                    </a>
-                </li>
-                <li>
-                    <a href="#">
-                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24"
-                            stroke="currentColor" stroke-width="2">
-                            <path stroke-linecap="round" stroke-linejoin="round"
-                                d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z" />
-                        </svg>
-                    </a>
-                </li>
-            </ul>
-        </nav>
+          </nav>
+        </div>
+      </div>
     </header>
-</body>
+    <main>
+      <!-- hero section start -->
+      <section class="grid grid-cols-12 items-center max-h-[70vh] mb-4">
+        <div class="col-span-9 relative">
+          <img src="../dist/img/img-22.jpeg" alt="img" class="w-full"/>
+          <img src="../dist/img/triangle1.png" alt="" class="absolute right-0 top-0 h-full">
+          <div class="absolute top-1/2 right-0">
+            <div class="text-white text-4xl text-right pl-3 pr-6 font-extrabold text-shadow leading-10">&#11208; <br> 100% <br> Quality <br> Wax Print</div>
+          </div>
+        </div>
+        <div class="col-span-3">
+          <div class="grid grid-flow-row gap-2 items-center px-4">
+            <img src="../dist/img/ankara-1.jpeg" alt="ankara 1" class=" w-full"/>
+            <img src="../dist/img/ankara-2.jpeg" alt="ankara 2" class=" w-full"/>
+          </div>
+        </div>
+      </section>
+      <!-- hero section end -->
+      
+      <!-- Quick links start -->
+      <section class="bg-white grid grid-cols-5 gap-5 justify-between items-center max-h-28 my-8 px-3">
+        <div class="relative h-full">
+          <img src="../dist/img/arrow.png" alt="arrow" class="h-full w-28">
+          <span class="text-white italic absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2">Quick Links</span>
+        </div>
+        <a href="#" class="flex items-center rounded bg-white px-6 py-4 drop-shadow hover:drop-shadow-lg">
+          <img src="../dist/img/clothing.png" class="mr-3 h-9" alt="clothing">
+          <span class="text-slate-500 font-extrabold">Start your <span class="text-primary">Asoebi</span></span> </a>
+        <a href="#" class="flex items-center rounded bg-white px-6 py-4 drop-shadow hover:drop-shadow-lg">
+          <img src="../dist/img/calender.png" class="mr-3 h-9" alt="calender">
+          <span class="text-slate-500 font-extrabold font-poppins">Manage <span class="text-primary">Event</span></span> </a>
+        <a href="#" class="flex items-center rounded bg-white px-6 py-4 drop-shadow hover:drop-shadow-lg">
+          <img src="../dist/img/cloth-style.png" class="mr-3 h-9" alt="style">
+          <span class="text-slate-500 font-extrabold font-poppins">Find <span class="text-primary">Designers</span></span></a>
+        <a href="#" class="flex items-center rounded bg-white px-4 py-4 drop-shadow hover:drop-shadow-lg">
+          <img src="../dist/img/fast-delivery.png" class="mr-3 h-9" alt="fast delivery">
+          <span class="text-slate-500 font-extrabold font-poppins">Fast <span class="text-primary">Delivery</span></span></a>
+      </section>
+      <!-- Quick links start -->
+      <!-- get started banner start-->
+      <section>
+        <div class="bg-[url('../dist/img/bg-sm1.jpeg')] px-16 py-4 flex justify-between items-center">
+          <span class="text-white text-4xl font-bold text-center">Free Access to countless Asoebi Patterns,<br> Styles and Designers!</span>
+          <button class=" bg-white drop-shadow rounded-md text-primary font-bold px-4 py-2 hover:bg-slate-200">GET STARTED</button>
+        </div>
+      </section>
+      <!-- get started banner end-->
 
+      <!-- Trending now start -->
+      <section class="mx-auto my-16 container px-4">
+        <div class="mb-6">
+          <h2 class="text-4xl font-medium leading-loose text-acent-1">Trending Now</h2>
+          <p class="text-xs text-gray-600">Discover our top selling product!</p>
+        </div>
+        <div>
+          <div class="grid grid-cols-1 md:grid-cols-3 xl:grid-cols-4 gap-5 items-center ">
+            <div class="rouonded-md shadow-md p-3">
+              <img src="../dist/img/shoe-bag.jpeg" alt="shoe and bag">
+              <div>
+                <h3 class="relative leading-loose text-center my-2">Gorgeous Wedding Shoe & Bag
+                  <span class=" absolute bottom-0 w-3/4 transform -translate-x-1/2 bg-red-500 h-[0.1rem] left-1/2"></span>
+                </h3>
+                <p class="text-xs h-16 text-gray-600">Discover our  gorgeous fashion shoe and bag
+                  perfect  for that special occassion where you
+                  need to make a lasting fashion statement!</p>
+                <h4 class="text-center my-4">N27,500</h4>
+                <div class="flex justify-between text-sm items-center">
+                  <a href="#">ADD TO CART</a>
+                  <button class="bg-primary text-white font-medium rounded-md drop-shadow-lg border-2 border-white px-2 py-1 hover:bg-opacity-80">BUY NOW</button>
+                </div>
+              </div>
+            </div>
+            <div class="rouonded-md shadow p-3">
+              <img src="../dist/img/men-shoe1.jpeg" alt="men shoes">
+              <div>
+                <h3 class="relative leading-loose text-center my-2">Clarkes Mens’ Leather Shoe
+                  <span class=" absolute bottom-0 w-3/4 transform -translate-x-1/2 bg-red-500 h-[0.1rem] left-1/2"></span>
+                </h3>
+                <p class="text-xs h-16 text-gray-600">Discover our  gorgeous leather handmade shoes
+                  by trusted quality brands! </p>
+                <h4 class="text-center my-4">N19,500</h4>
+                <div class="flex justify-between items-center text-sm">
+                  <a href="#">ADD TO CART</a>
+                  <button class="bg-primary text-white font-medium rounded-md drop-shadow-lg border-2 border-white px-2 py-1 hover:bg-opacity-80">BUY NOW</button>
+                </div>
+              </div>
+            </div>
+            <div class="rouonded-md shadow p-3">
+              <img src="../dist/img/watch1.jpeg" alt="watch">
+              <div>
+                <h3 class="relative leading-loose text-center my-2">Timeless (Saphire) Wristwatch
+                  <span class=" absolute bottom-0 w-3/4 transform -translate-x-1/2 bg-red-500 h-[0.1rem] left-1/2"></span>
+                </h3>
+                <p class="text-xs h-16 text-gray-600">Discover our  gorgeous leather handmade shoes
+                  by trusted quality brands! </p>
+                <h4 class="text-center my-4">N30,000</h4>
+                <div class="flex justify-between items-center text-sm">
+                  <a href="#">ADD TO CART</a>
+                  <button class="bg-primary text-white font-medium rounded-md drop-shadow-lg border-2 border-white px-2 py-1 hover:bg-opacity-80">BUY NOW</button>
+                </div>
+              </div>
+            </div>
+            <div class="rouonded-md shadow p-3">
+              <img src="../dist/img/shoe-bag.jpeg" alt="shoe and bag">
+              <div>
+                <h3 class="relative leading-loose text-center my-2">Gorgeous Wedding Shoe & Bag
+                  <span class=" absolute bottom-0 w-3/4 transform -translate-x-1/2 bg-red-500 h-[0.1rem] left-1/2"></span>
+                </h3>
+                <p class="text-xs h-16 text-gray-600">Discover our  gorgeous fashion shoe and bag
+                  perfect  for that special occassion where you
+                  need to make a lasting fashion statement!</p>
+                <h4 class="text-center my-4">N27,500</h4>
+                <div class="flex justify-between items-center text-sm">
+                  <a href="#">ADD TO CART</a>
+                  <button class="bg-primary text-white font-medium rounded-md drop-shadow-lg border-2 border-white px-2 py-1 hover:bg-opacity-80">BUY NOW</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Trending now end -->
+
+      <!-- Fabrics start -->
+      <section class="mx-auto my-16 container px-4">
+        <div class="mb-6">
+          <h2 class="text-4xl font-medium leading-loose text-acent-1">Fabrics</h2>
+        </div>
+        <div>
+          <div class="grid grid-cols-1 md:grid-cols-3 xl:grid-cols-4 gap-5 items-center ">
+            <div class="rouonded-md shadow-md p-3">
+              <div class="relative">
+                <img src="../dist/img/men1.jpeg" alt="shoe and bag">
+                <div class="absolute left-0 bottom-0 w-0 h-0 border-t-[110px] border-l-[110px] border-solid border-t-transparent border-l-primary opacity-75">
+                </div>
+                <div class="absolute left-1 bottom-2 text-lg text-white font-semibold">50% off</div>
+              </div>
+              <div class="text-center">
+                <h3 class="leading-loose my-2">Gorgeous Dashiki Fabrics
+                </h3>
+                <p class="text-xs text-gray-600 h-16 text-left">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Amet harum sapiente architecto.</p>
+                <a href="#" class="text-primary inline">View more</a>
+              </div>
+            </div>
+            <div class="rouonded-md shadow-md p-3">
+              <div class="relative">
+                <img src="../dist/img/ankara-1.jpeg" alt="shoe and bag">
+                <div class="absolute left-0 bottom-0 w-0 h-0 border-t-[110px] border-l-[110px] border-solid border-t-transparent border-l-primary opacity-75">
+                </div>
+                <div class="absolute left-1 bottom-2 text-lg text-white font-semibold">35% off</div>
+              </div>
+              <div class="text-center">
+                <h3 class="leading-loose my-2">High Quality Ankara Fabrics
+                </h3>
+                <p class="text-xs text-gray-600 h-16 text-left">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Amet harum sapiente architecto.</p>
+                <a href="#" class="text-primary inline">View more</a>
+              </div>
+            </div>
+            <div class="rouonded-md shadow-md p-3">
+              <div class="relative">
+                <img src="../dist/img/ankara-2.jpeg" alt="shoe and bag">
+                <div class="absolute left-0 bottom-0 w-0 h-0 border-t-[110px] border-l-[110px] border-solid border-t-transparent border-l-primary opacity-75">
+                </div>
+                <div class="absolute left-1 bottom-2 text-lg text-white font-semibold">25% off</div>
+              </div>
+              <div class="text-center">
+                <h3 class="leading-loose my-2">High Quality Hollandis Fabrics
+                </h3>
+                <p class="text-xs text-gray-600 h-16 text-left">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Amet harum sapiente architecto.</p>
+                <a href="#" class="text-primary inline">View more</a>
+              </div>
+            </div>
+            <div class="rouonded-md shadow-md p-3">
+              <div class="relative">
+                <img src="../dist/img/men1.jpeg" alt="shoe and bag">
+                <div class="absolute left-0 bottom-0 w-0 h-0 border-t-[110px] border-l-[110px] border-solid border-t-transparent border-l-primary opacity-75">
+                </div>
+                <div class="absolute left-1 bottom-2 text-lg text-white font-semibold">50% off</div>
+              </div>
+              <div class="text-center">
+                <h3 class="leading-loose my-2">Gorgeous Dashiki Fabrics
+                </h3>
+                <p class="text-xs text-gray-600 h-16 text-left">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Amet harum sapiente architecto.</p>
+                <a href="#" class="text-primary inline">View more</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Fabrics end -->
+
+      <!-- Accessories start -->
+      <section class="mx-auto my-16 container px-4">
+        <div class="mb-6">
+          <h2 class="text-4xl font-medium leading-loose text-acent-1">Accessories</h2>
+        </div>
+        <div>
+          <div class="grid grid-cols-1 md:grid-cols-3 xl:grid-cols-4 gap-5 items-center ">
+            <div class="rouonded-md shadow-md p-3">
+              <div class="relative">
+                <img src="../dist/img/beads-1.jpeg" alt="shoe and bag">
+                <!-- <div class="absolute left-0 bottom-0 w-0 h-0 border-t-[110px] border-l-[110px] border-solid border-t-transparent border-l-primary opacity-75">
+                </div>
+                <div class="absolute left-1 bottom-2 text-lg text-white font-semibold">50% off</div> -->
+              </div>
+              <div class="text-center">
+                <h3 class="leading-loose my-2">Beautiful Wedding Beads
+                </h3>
+                <p class="text-xs text-gray-600 h-16 text-left">Explore our range of  beautiful wedding beads. We stock all range of traditional beads, coral beads, glass beads and more</p>
+                <a href="#" class="text-primary inline">View more</a>
+              </div>
+            </div>
+            <div class="rouonded-md shadow-md p-3">
+              <div class="relative">
+                <img src="../dist/img/men-shoe1.jpeg" alt="shoe and bag">
+                <div class="absolute left-0 bottom-0 w-0 h-0 border-t-[110px] border-l-[110px] border-solid border-t-transparent border-l-primary opacity-75">
+                </div>
+                <div class="absolute left-1 bottom-2 text-lg text-white font-semibold">10% off</div>
+              </div>
+              <div class="text-center">
+                <h3 class="leading-loose my-2">Clarkes Mens’ Leather Shoe
+                </h3>
+                <p class="text-xs text-gray-600 h-16 text-left">Discover our  gorgeous leather handmade shoes by trusted quality brands! </p>
+                <a href="#" class="text-primary inline">View more</a>
+              </div>
+            </div>
+            <div class="rouonded-md shadow-md p-3">
+              <div class="relative">
+                <img src="../dist/img/watch1.jpeg" alt="shoe and bag">
+                <div class="absolute left-0 bottom-0 w-0 h-0 border-t-[110px] border-l-[110px] border-solid border-t-transparent border-l-primary opacity-75">
+                </div>
+                <div class="absolute left-1 bottom-2 text-lg text-white font-semibold">12% off</div>
+              </div>
+              <div class="text-center">
+                <h3 class="leading-loose my-2">Timeless (Saphire) Wristwatch
+                </h3>
+                <p class="text-xs text-gray-600 h-16 text-left">Discover our  gorgeous leather handmade shoes by trusted quality brands! </p>
+                <a href="#" class="text-primary inline">View more</a>
+              </div>
+            </div>
+            <div class="rouonded-md shadow-md p-3">
+              <div class="relative">
+                <img src="../dist/img/men1.jpeg" alt="shoe and bag">
+                <div class="absolute left-0 bottom-0 w-0 h-0 border-t-[110px] border-l-[110px] border-solid border-t-transparent border-l-primary opacity-75">
+                </div>
+                <div class="absolute left-1 bottom-2 text-lg text-white font-semibold">50% off</div>
+              </div>
+              <div class="text-center">
+                <h3 class="leading-loose my-2">Gorgeous Dashiki Fabrics
+                </h3>
+                <p class="text-xs text-gray-600 h-16 text-left">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Amet harum sapiente architecto.</p>
+                <a href="#" class="text-primary inline">View more</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Accessories end -->
+
+      <!-- Trending Designs start -->
+      <section class="mx-auto my-16 container px-4">
+        <div class="mb-6">
+          <h2 class="text-4xl font-medium leading-loose text-acent-1">Trending Designs</h2>
+        </div>
+        <div>
+          <div class="grid grid-cols-1 md:grid-cols-3 xl:grid-cols-4 gap-5 items-center ">
+            <div class="rouonded-md shadow-md p-3">
+              <div class="relative">
+                <img src="../dist/img/women-1.jpeg" alt="shoe and bag">
+              </div>
+              <div class="text-center">
+                <h3 class="leading-loose my-2">Imperial Styled Asoebi
+                </h3>
+                <a href="#" class="text-primary inline">View more</a>
+              </div>
+            </div>
+            <div class="rouonded-md shadow-md p-3">
+              <div class="relative">
+                <img src="../dist/img/women-2.jpeg" alt="shoe and bag">
+              </div>
+              <div class="text-center">
+                <h3 class="leading-loose my-2">Mermaid Style Asoebi
+                </h3>
+                <a href="#" class="text-primary inline">View more</a>
+              </div>
+            </div>
+            <div class="rouonded-md shadow-md p-3">
+              <div class="relative">
+                <img src="../dist/img/men2.jpeg" alt="shoe and bag">
+              </div>
+              <div class="text-center">
+                <h3 class="leading-loose my-2">Timeless (Saphire) Wristwatch
+                </h3>
+                <a href="#" class="text-primary inline">View more</a>
+              </div>
+            </div>
+            <div class="rouonded-md shadow-md p-3">
+              <div class="relative">
+                <img src="../dist/img/women-1.jpeg" alt="shoe and bag">
+              </div>
+              <div class="text-center">
+                <h3 class="leading-loose my-2">Beautiful Wedding Beads
+                </h3>
+                <a href="#" class="text-primary inline">View more</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Trending Designs end -->
+
+      <!-- partners start -->
+      <section class="mb-8">
+        <div class="container mx-auto px-4 mb-6">
+          <h2 class="text-4xl font-medium leading-loose text-acent-1">Partners</h2>
+        </div>
+        <div class="bg-gray-200 drop-shadow-lg">
+          <div class="container mx-auto px-4 grid grid-cols-5 gap-36 items-center py-4 ">
+            <div><img src="../dist/img/dhl.jpeg" class="w-full" alt="dhl"></div>
+            <div><img src="../dist/img/daviva.jpeg" class="w-full" alt="daviva"></div>
+            <div><img src="../dist/img/odeya.jpeg" class="w-full" alt="odeya"></div>
+            <div><img src="../dist/img/dumota.jpeg" class="w-full" alt="dumota"></div>
+            <div><img src="../dist/img/ddd.jpeg" class="w-full" alt="ddd"></div>
+          </div>
+        </div>
+      </section>
+      <!-- partners end -->
+
+      <!-- Testimonials start -->
+      <section class="mb-10">
+        <div class="container mx-auto px-4">
+          <div class="mb-6">
+            <h2 class="text-4xl font-medium leading-loose text-acent-1">Testimonials</h2>
+          </div>
+          <div class="flex justify-around gap-24 items-center">
+            <div class=""><img src="../dist/img/couple-1.jpeg" alt="couple" class="w-full"></div>
+            <div class="w-full">
+              <blockquote class="relative max-w-md mx-auto before:absolute before:content-['\201C'] before:-ml-8 before:-mt-8 before:text-primary before:text-8xl after:content-['\201D'] after:ml-2 after:text-primary after:absolute after:text-8xl">
+                Asoebi was the perfect solution for our 
+                wedding asoebi needs. 
+                This platform eliminated the stress of sales 
+                of materials as well as choice
+                of fashion designers to ensure glamour
+                and the perfect wedding.
+              </blockquote>
+              <div class="max-w-md mx-auto text-primary font-semibold mt-3">Mr & Mrs Eze Orome</div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Testimonials end -->
+
+      <!-- subscribe section start -->
+      <section class=" bg-gradient-to-b from-primary via-orange-300 to-primary py-8">
+        <div class="container mx-auto px-4">
+          <div class="flex justify-between items-center">
+            <h2 class="text-3xl text-white font-semibold">New to Asoebi?
+              <span class="block text-lg font-normal">Sign up to get updates on our latest offers</span>
+            </h2>
+            <form action="" method="post">
+              <input type="email" class="px-4 py-3 rounded-lg drop-shadow-lg mr-4 border-2 border-white bg-primary placeholder:text-white" placeholder="Enter your email" >
+              <a href="#" class="rounded-lg px-6 py-3 text-center border-2 shadow-md bg-white text-primary">Subscribe</a>
+            </form>
+          </div>
+        </div>
+      </section>
+      <!-- subscribe section end -->
+    </main>
+
+    <footer class=" py-8">
+      <div class="container px-4 mx-auto">
+        <div class="flex justify-between">
+          <div>
+            <h3>Company</h3>
+            <ul>
+              <li><a href="#" class="text-xs text-gray-500">About Us</a></li>
+              <li><a href="#" class="text-xs text-gray-500">Shops</a></li>
+              <li><a href="#" class="text-xs text-gray-500">Blogs</a></li>
+              <li><a href="#" class="text-xs text-gray-500">Contact Us</a></li>
+            </ul>
+          </div>
+          <div>
+            <h3>Products</h3>
+            <ul>
+              <li><a href="#" class="text-xs text-gray-500">Support</a></li>
+              <li><a href="#" class="text-xs text-gray-500">Warranty</a></li>
+              <li><a href="#" class="text-xs text-gray-500">Privacy Policy</a></li>
+              <li><a href="#" class="text-xs text-gray-500">Delivery</a></li>
+            </ul>
+          </div>
+          <div>
+            <h3>Oders</h3>
+            <ul>
+              <li><a href="#" class="text-xs text-gray-500">Status</a></li>
+              <li><a href="#" class="text-xs text-gray-500">Shipping</a></li>
+              <li><a href="#" class="text-xs text-gray-500">Coupons</a></li>
+              <li><a href="#" class="text-xs text-gray-500">Discount</a></li>
+            </ul>
+          </div>
+          <div>
+            <h3>Payment Methods</h3>
+            <div class="grid grid-cols-2 gap-5">
+              <img src="../dist/img/mastercard.jpeg" class="h-14" alt="mastercard">
+              <img src="../dist/img/verve.jpeg" class="h-14" alt="verve">
+              <img src="../dist/img/visa.jpeg" class="h-14" alt="visa card">
+              <img src="../dist/img/paystack.jpeg" class="h-14" alt="paystack">
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="container mx-auto h-16 px-4 mt-8">
+        <hr class="mb-2">
+        <div class="flex justify-between items-center">
+          <a href="/" class="inline-block text-2xl font-bold">
+            <img
+              src="../dist/img/asoebi-logo.png"
+              alt="asoebi-logo"
+              class="w-full h-9 md:h-12"
+            />
+          </a>
+          <nav>
+            <ul class="flex items-center justify-between">
+              <li><a href="#" class="px-4 py-2 inline-block mr-3 text-xs">Terms</a></li>
+              <li><a href="#" class="px-4 py-2 inline-block mr-3 text-xs">Privacy</a></li>
+              <li><a href="#" class="px-4 py-2 inline-block mr-3 text-xs">Cookies</a></li>
+            </ul>
+          </nav>
+          <nav>
+            <ul class="flex">
+              <li class="inline-block mr-3">
+                <a href="#"
+                  ><img
+                    src="../dist/img/facebook.png"
+                    alt="facebook"
+                    class="w-3"
+                /></a>
+              </li>
+              <li class="inline-block mr-3">
+                <a href="#"
+                  ><img src="../dist/img/twitter.png" alt="twitter" class="w-3"
+                /></a>
+              </li>
+              <li class="inline-block">
+                <a href="#"
+                  ><img
+                    src="../dist/img/instagram.png"
+                    alt="instagram"
+                    class="w-3"
+                /></a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </footer>
+
+  </body>
 </html>
