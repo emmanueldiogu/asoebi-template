@@ -125,7 +125,7 @@
               </svg>
             </button>
             <nav
-              class="absolute mt-16 bg-white shadow-md left-0 top-0 w-3/4 h-screen md:relative md:h-full md:w-full md:mt-0 md:shadow-none"
+              class="absolute hidden mt-16 bg-white shadow-md left-0 top-0 w-3/4 h-screen md:relative md:h-full md:w-full md:mt-0 md:shadow-none"
             >
               <ul class="flex flex-col py-1 md:py-0 md:flex-row items-center">
                 <li class="md:mb-0 md:mr-3 mb-2 w-full px-4 md:px-0">
@@ -233,15 +233,15 @@
     </header>
     <main>
       <!-- hero section start -->
-      <section class="grid grid-cols-12 items-center max-h-[70vh] mb-4">
-        <div class="col-span-9 relative">
+      <section class="grid grid-flow-row md:grid-cols-12 items-center md:max-h-[70vh] mb-4">
+        <div class="md:col-span-9 relative">
           <img src="../dist/img/img-22.jpeg" alt="img" class="w-full"/>
           <img src="../dist/img/triangle1.png" alt="" class="absolute right-0 top-0 h-full">
-          <div class="absolute top-1/2 right-0">
-            <div class="text-white text-4xl text-right pl-3 pr-6 font-extrabold text-shadow leading-10">&#11208; <br> 100% <br> Quality <br> Wax Print</div>
+          <div class="absolute bottom-0 right-0">
+            <div class="text-white md:text-2xl lg:text-4xl text-right pr-2 pb-2 lg:pl-3 lg:pr-6 font-extrabold text-shadow lg:leading-10">&#11208; <br> 100% <br> Quality <br> Wax Print</div>
           </div>
         </div>
-        <div class="col-span-3">
+        <div class="hidden md:block md:col-span-3">
           <div class="grid grid-flow-row gap-2 items-center px-4">
             <img src="../dist/img/ankara-1.jpeg" alt="ankara 1" class=" w-full"/>
             <img src="../dist/img/ankara-2.jpeg" alt="ankara 2" class=" w-full"/>
@@ -251,46 +251,49 @@
       <!-- hero section end -->
       
       <!-- Quick links start -->
-      <section class="bg-white grid grid-cols-5 gap-5 justify-between items-center max-h-28 my-8 px-3">
-        <div class="relative h-full">
-          <img src="../dist/img/arrow.png" alt="arrow" class="h-full w-28">
-          <span class="text-white italic absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2">Quick Links</span>
+      <section class="bg-white">
+        <div class="grid grid-cols-2 md:grid-cols-5 gap-1 justify-between items-center md:max-h-28 my-8 px-3">
+          <div class="relative h-full col-span-2 md:col-span-1 max-w-sm">
+            <img src="../dist/img/arrow.png" alt="arrow" class="h-full w-28">
+            <span class="text-white italic absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2">Quick Links</span>
+          </div>
+          <a href="#" class="flex items-center rounded bg-white px-6 py-4 drop-shadow hover:drop-shadow-lg text-xs lg:text-base">
+            <img src="../dist/img/clothing.png" class="mr-3 h-6 lg:h-9" alt="clothing">
+            <span class="text-slate-500 font-extrabold">Start your <span class="text-primary">Asoebi</span></span> </a>
+          <a href="#" class="flex items-center rounded bg-white px-6 py-4 drop-shadow hover:drop-shadow-lg text-xs lg:text-base">
+            <img src="../dist/img/calender.png" class="mr-3 h-6 lg:h-9" alt="calender">
+            <span class="text-slate-500 font-extrabold font-poppins">Manage <span class="text-primary">Event</span></span> </a>
+          <a href="#" class="flex items-center rounded bg-white px-6 py-4 drop-shadow hover:drop-shadow-lg text-xs lg:text-base">
+            <img src="../dist/img/cloth-style.png" class="mr-3 h-6 lg:h-9" alt="style">
+            <span class="text-slate-500 font-extrabold font-poppins">Find <span class="text-primary"> Designers</span></span></a>
+          <a href="#" class="flex items-center rounded bg-white px-4 py-4 drop-shadow hover:drop-shadow-lg text-xs lg:text-base">
+            <img src="../dist/img/fast-delivery.png" class="mr-3 h-6 lg:h-9" alt="fast delivery">
+            <span class="text-slate-500 font-extrabold font-poppins">Fast <span class="text-primary">Delivery</span></span></a>
         </div>
-        <a href="#" class="flex items-center rounded bg-white px-6 py-4 drop-shadow hover:drop-shadow-lg">
-          <img src="../dist/img/clothing.png" class="mr-3 h-9" alt="clothing">
-          <span class="text-slate-500 font-extrabold">Start your <span class="text-primary">Asoebi</span></span> </a>
-        <a href="#" class="flex items-center rounded bg-white px-6 py-4 drop-shadow hover:drop-shadow-lg">
-          <img src="../dist/img/calender.png" class="mr-3 h-9" alt="calender">
-          <span class="text-slate-500 font-extrabold font-poppins">Manage <span class="text-primary">Event</span></span> </a>
-        <a href="#" class="flex items-center rounded bg-white px-6 py-4 drop-shadow hover:drop-shadow-lg">
-          <img src="../dist/img/cloth-style.png" class="mr-3 h-9" alt="style">
-          <span class="text-slate-500 font-extrabold font-poppins">Find <span class="text-primary">Designers</span></span></a>
-        <a href="#" class="flex items-center rounded bg-white px-4 py-4 drop-shadow hover:drop-shadow-lg">
-          <img src="../dist/img/fast-delivery.png" class="mr-3 h-9" alt="fast delivery">
-          <span class="text-slate-500 font-extrabold font-poppins">Fast <span class="text-primary">Delivery</span></span></a>
       </section>
       <!-- Quick links start -->
+
       <!-- get started banner start-->
       <section>
-        <div class="bg-[url('../dist/img/bg-sm1.jpeg')] px-16 py-4 flex justify-between items-center">
-          <span class="text-white text-4xl font-bold text-center">Free Access to countless Asoebi Patterns,<br> Styles and Designers!</span>
-          <button class=" bg-white drop-shadow rounded-md text-primary font-bold px-4 py-2 hover:bg-slate-200">GET STARTED</button>
+        <div class="bg-[url('../dist/img/bg-sm1.jpeg')] px-4 md:px-16 py-4 flex justify-between items-center">
+          <span class="text-white md:text-4xl font-bold text-center">Free Access to countless Asoebi Patterns,<br> Styles and Designers!</span>
+          <button class=" bg-white drop-shadow rounded-md text-primary font-bold text-xs md:text-3xl px-4 py-2 hover:bg-slate-200">GET STARTED</button>
         </div>
       </section>
       <!-- get started banner end-->
 
       <!-- Trending now start -->
       <section class="mx-auto my-16 container px-4">
-        <div class="mb-6">
-          <h2 class="text-4xl font-medium leading-loose text-acent-1">Trending Now</h2>
+        <div class="mb-4">
+          <h2 class="text-3xl lg:text-4xl font-medium leading-loose text-acent-1">Trending Now</h2>
           <p class="text-xs text-gray-600">Discover our top selling product!</p>
         </div>
         <div>
-          <div class="grid grid-cols-1 md:grid-cols-3 xl:grid-cols-4 gap-5 items-center ">
+          <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 xl:grid-cols-4 gap-5 items-center ">
             <div class="rouonded-md shadow-md p-3">
               <img src="../dist/img/shoe-bag.jpeg" alt="shoe and bag">
               <div>
-                <h3 class="relative leading-loose text-center my-2">Gorgeous Wedding Shoe & Bag
+                <h3 class="relative leading-loose text-center text-sm my-2">Gorgeous Wedding Shoe & Bag
                   <span class=" absolute bottom-0 w-3/4 transform -translate-x-1/2 bg-red-500 h-[0.1rem] left-1/2"></span>
                 </h3>
                 <p class="text-xs h-16 text-gray-600">Discover our  gorgeous fashion shoe and bag
@@ -306,7 +309,7 @@
             <div class="rouonded-md shadow p-3">
               <img src="../dist/img/men-shoe1.jpeg" alt="men shoes">
               <div>
-                <h3 class="relative leading-loose text-center my-2">Clarkes Mens’ Leather Shoe
+                <h3 class="relative leading-loose text-sm text-center my-2">Clarkes Mens’ Leather Shoe
                   <span class=" absolute bottom-0 w-3/4 transform -translate-x-1/2 bg-red-500 h-[0.1rem] left-1/2"></span>
                 </h3>
                 <p class="text-xs h-16 text-gray-600">Discover our  gorgeous leather handmade shoes
@@ -321,7 +324,7 @@
             <div class="rouonded-md shadow p-3">
               <img src="../dist/img/watch1.jpeg" alt="watch">
               <div>
-                <h3 class="relative leading-loose text-center my-2">Timeless (Saphire) Wristwatch
+                <h3 class="relative leading-loose text-sm text-center my-2">Timeless (Saphire) Wristwatch
                   <span class=" absolute bottom-0 w-3/4 transform -translate-x-1/2 bg-red-500 h-[0.1rem] left-1/2"></span>
                 </h3>
                 <p class="text-xs h-16 text-gray-600">Discover our  gorgeous leather handmade shoes
@@ -336,7 +339,7 @@
             <div class="rouonded-md shadow p-3">
               <img src="../dist/img/shoe-bag.jpeg" alt="shoe and bag">
               <div>
-                <h3 class="relative leading-loose text-center my-2">Gorgeous Wedding Shoe & Bag
+                <h3 class="relative leading-loose text-sm text-center my-2">Gorgeous Wedding Shoe & Bag
                   <span class=" absolute bottom-0 w-3/4 transform -translate-x-1/2 bg-red-500 h-[0.1rem] left-1/2"></span>
                 </h3>
                 <p class="text-xs h-16 text-gray-600">Discover our  gorgeous fashion shoe and bag
@@ -357,10 +360,10 @@
       <!-- Fabrics start -->
       <section class="mx-auto my-16 container px-4">
         <div class="mb-6">
-          <h2 class="text-4xl font-medium leading-loose text-acent-1">Fabrics</h2>
+          <h2 class="text-3xl lg:text-4xl font-medium leading-loose text-acent-1">Fabrics</h2>
         </div>
         <div>
-          <div class="grid grid-cols-1 md:grid-cols-3 xl:grid-cols-4 gap-5 items-center ">
+          <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 xl:grid-cols-4 gap-5 items-center ">
             <div class="rouonded-md shadow-md p-3">
               <div class="relative">
                 <img src="../dist/img/men1.jpeg" alt="shoe and bag">
@@ -369,7 +372,7 @@
                 <div class="absolute left-1 bottom-2 text-lg text-white font-semibold">50% off</div>
               </div>
               <div class="text-center">
-                <h3 class="leading-loose my-2">Gorgeous Dashiki Fabrics
+                <h3 class="leading-loose text-sm my-2">Gorgeous Dashiki Fabrics
                 </h3>
                 <p class="text-xs text-gray-600 h-16 text-left">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Amet harum sapiente architecto.</p>
                 <a href="#" class="text-primary inline">View more</a>
@@ -383,7 +386,7 @@
                 <div class="absolute left-1 bottom-2 text-lg text-white font-semibold">35% off</div>
               </div>
               <div class="text-center">
-                <h3 class="leading-loose my-2">High Quality Ankara Fabrics
+                <h3 class="leading-loose text-sm my-2">High Quality Ankara Fabrics
                 </h3>
                 <p class="text-xs text-gray-600 h-16 text-left">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Amet harum sapiente architecto.</p>
                 <a href="#" class="text-primary inline">View more</a>
@@ -397,7 +400,7 @@
                 <div class="absolute left-1 bottom-2 text-lg text-white font-semibold">25% off</div>
               </div>
               <div class="text-center">
-                <h3 class="leading-loose my-2">High Quality Hollandis Fabrics
+                <h3 class="leading-loose text-sm my-2">High Quality Hollandis Fabrics
                 </h3>
                 <p class="text-xs text-gray-600 h-16 text-left">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Amet harum sapiente architecto.</p>
                 <a href="#" class="text-primary inline">View more</a>
@@ -411,7 +414,7 @@
                 <div class="absolute left-1 bottom-2 text-lg text-white font-semibold">50% off</div>
               </div>
               <div class="text-center">
-                <h3 class="leading-loose my-2">Gorgeous Dashiki Fabrics
+                <h3 class="leading-loose text-sm my-2">Gorgeous Dashiki Fabrics
                 </h3>
                 <p class="text-xs text-gray-600 h-16 text-left">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Amet harum sapiente architecto.</p>
                 <a href="#" class="text-primary inline">View more</a>
@@ -425,10 +428,10 @@
       <!-- Accessories start -->
       <section class="mx-auto my-16 container px-4">
         <div class="mb-6">
-          <h2 class="text-4xl font-medium leading-loose text-acent-1">Accessories</h2>
+          <h2 class="text-3xl lg:text-4xl font-medium leading-loose text-acent-1">Accessories</h2>
         </div>
         <div>
-          <div class="grid grid-cols-1 md:grid-cols-3 xl:grid-cols-4 gap-5 items-center ">
+          <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 xl:grid-cols-4 gap-5 items-center ">
             <div class="rouonded-md shadow-md p-3">
               <div class="relative">
                 <img src="../dist/img/beads-1.jpeg" alt="shoe and bag">
@@ -437,7 +440,7 @@
                 <div class="absolute left-1 bottom-2 text-lg text-white font-semibold">50% off</div> -->
               </div>
               <div class="text-center">
-                <h3 class="leading-loose my-2">Beautiful Wedding Beads
+                <h3 class="leading-loose text-sm my-2">Beautiful Wedding Beads
                 </h3>
                 <p class="text-xs text-gray-600 h-16 text-left">Explore our range of  beautiful wedding beads. We stock all range of traditional beads, coral beads, glass beads and more</p>
                 <a href="#" class="text-primary inline">View more</a>
@@ -451,7 +454,7 @@
                 <div class="absolute left-1 bottom-2 text-lg text-white font-semibold">10% off</div>
               </div>
               <div class="text-center">
-                <h3 class="leading-loose my-2">Clarkes Mens’ Leather Shoe
+                <h3 class="leading-loose text-sm my-2">Clarkes Mens’ Leather Shoe
                 </h3>
                 <p class="text-xs text-gray-600 h-16 text-left">Discover our  gorgeous leather handmade shoes by trusted quality brands! </p>
                 <a href="#" class="text-primary inline">View more</a>
@@ -465,7 +468,7 @@
                 <div class="absolute left-1 bottom-2 text-lg text-white font-semibold">12% off</div>
               </div>
               <div class="text-center">
-                <h3 class="leading-loose my-2">Timeless (Saphire) Wristwatch
+                <h3 class="leading-loose text-sm my-2">Timeless (Saphire) Wristwatch
                 </h3>
                 <p class="text-xs text-gray-600 h-16 text-left">Discover our  gorgeous leather handmade shoes by trusted quality brands! </p>
                 <a href="#" class="text-primary inline">View more</a>
@@ -479,7 +482,7 @@
                 <div class="absolute left-1 bottom-2 text-lg text-white font-semibold">50% off</div>
               </div>
               <div class="text-center">
-                <h3 class="leading-loose my-2">Gorgeous Dashiki Fabrics
+                <h3 class="leading-loose text-sm my-2">Gorgeous Dashiki Fabrics
                 </h3>
                 <p class="text-xs text-gray-600 h-16 text-left">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Amet harum sapiente architecto.</p>
                 <a href="#" class="text-primary inline">View more</a>
@@ -493,16 +496,16 @@
       <!-- Trending Designs start -->
       <section class="mx-auto my-16 container px-4">
         <div class="mb-6">
-          <h2 class="text-4xl font-medium leading-loose text-acent-1">Trending Designs</h2>
+          <h2 class="text-3xl lg:text-4xl font-medium leading-loose text-acent-1">Trending Designs</h2>
         </div>
         <div>
-          <div class="grid grid-cols-1 md:grid-cols-3 xl:grid-cols-4 gap-5 items-center ">
+          <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 xl:grid-cols-4 gap-5 items-center ">
             <div class="rouonded-md shadow-md p-3">
               <div class="relative">
                 <img src="../dist/img/women-1.jpeg" alt="shoe and bag">
               </div>
               <div class="text-center">
-                <h3 class="leading-loose my-2">Imperial Styled Asoebi
+                <h3 class="leading-loose text-sm my-2">Imperial Styled Asoebi
                 </h3>
                 <a href="#" class="text-primary inline">View more</a>
               </div>
@@ -512,7 +515,7 @@
                 <img src="../dist/img/women-2.jpeg" alt="shoe and bag">
               </div>
               <div class="text-center">
-                <h3 class="leading-loose my-2">Mermaid Style Asoebi
+                <h3 class="leading-loose text-sm my-2">Mermaid Style Asoebi
                 </h3>
                 <a href="#" class="text-primary inline">View more</a>
               </div>
@@ -522,7 +525,7 @@
                 <img src="../dist/img/men2.jpeg" alt="shoe and bag">
               </div>
               <div class="text-center">
-                <h3 class="leading-loose my-2">Timeless (Saphire) Wristwatch
+                <h3 class="leading-loose text-sm my-2">Timeless (Saphire) Wristwatch
                 </h3>
                 <a href="#" class="text-primary inline">View more</a>
               </div>
@@ -532,7 +535,7 @@
                 <img src="../dist/img/women-1.jpeg" alt="shoe and bag">
               </div>
               <div class="text-center">
-                <h3 class="leading-loose my-2">Beautiful Wedding Beads
+                <h3 class="leading-loose text-sm my-2">Beautiful Wedding Beads
                 </h3>
                 <a href="#" class="text-primary inline">View more</a>
               </div>
@@ -545,10 +548,10 @@
       <!-- partners start -->
       <section class="mb-8">
         <div class="container mx-auto px-4 mb-6">
-          <h2 class="text-4xl font-medium leading-loose text-acent-1">Partners</h2>
+          <h2 class="text-3xl lg:text-4xl font-medium leading-loose text-acent-1">Partners</h2>
         </div>
         <div class="bg-gray-200 drop-shadow-lg">
-          <div class="container mx-auto px-4 grid grid-cols-5 gap-36 items-center py-4 ">
+          <div class="container mx-auto px-4 grid grid-cols-2 md:grid-cols-5 gap-5 md:gap-36 items-center py-4 ">
             <div><img src="../dist/img/dhl.jpeg" class="w-full" alt="dhl"></div>
             <div><img src="../dist/img/daviva.jpeg" class="w-full" alt="daviva"></div>
             <div><img src="../dist/img/odeya.jpeg" class="w-full" alt="odeya"></div>
@@ -561,11 +564,11 @@
 
       <!-- Testimonials start -->
       <section class="mb-10">
-        <div class="container mx-auto px-4">
+        <div class="container mx-auto px-10 md:px-4">
           <div class="mb-6">
-            <h2 class="text-4xl font-medium leading-loose text-acent-1">Testimonials</h2>
+            <h2 class="text-3xl lg:text-4xl font-medium leading-loose text-acent-1">Testimonials</h2>
           </div>
-          <div class="flex justify-around gap-24 items-center">
+          <div class="flex flex-col md:flex-row justify-around gap-24 items-center">
             <div class=""><img src="../dist/img/couple-1.jpeg" alt="couple" class="w-full"></div>
             <div class="w-full">
               <blockquote class="relative max-w-md mx-auto before:absolute before:content-['\201C'] before:-ml-8 before:-mt-8 before:text-primary before:text-8xl after:content-['\201D'] after:ml-2 after:text-primary after:absolute after:text-8xl">
@@ -586,13 +589,13 @@
       <!-- subscribe section start -->
       <section class=" bg-gradient-to-b from-primary via-orange-300 to-primary py-8">
         <div class="container mx-auto px-4">
-          <div class="flex justify-between items-center">
+          <div class="flex flex-col md:flex-row text-center gap-5 md:gap-0 justify-between items-center">
             <h2 class="text-3xl text-white font-semibold">New to Asoebi?
               <span class="block text-lg font-normal">Sign up to get updates on our latest offers</span>
             </h2>
             <form action="" method="post">
-              <input type="email" class="px-4 py-3 rounded-lg drop-shadow-lg mr-4 border-2 border-white bg-primary placeholder:text-white" placeholder="Enter your email" >
-              <a href="#" class="rounded-lg px-6 py-3 text-center border-2 shadow-md bg-white text-primary">Subscribe</a>
+              <input type="email" class="inline-block mb-6 sm:mb-0 sm:px-4 sm:py-3 rounded-lg drop-shadow-lg sm:mr-4 border-2 border-white bg-primary placeholder:text-white" placeholder="Enter your email" >
+              <a href="#" class="rounded-lg px-3 py-2 sm:px-6 sm:py-3 text-center border-2 shadow-md bg-white text-primary">Subscribe</a>
             </form>
           </div>
         </div>
@@ -602,8 +605,8 @@
 
     <footer class=" py-8">
       <div class="container px-4 mx-auto">
-        <div class="flex justify-between">
-          <div>
+        <div class="text-center md:flex justify-between">
+          <div class="mb-5 md:mb-0">
             <h3>Company</h3>
             <ul>
               <li><a href="#" class="text-xs text-gray-500">About Us</a></li>
@@ -612,7 +615,7 @@
               <li><a href="#" class="text-xs text-gray-500">Contact Us</a></li>
             </ul>
           </div>
-          <div>
+          <div class="mb-5 md:mb-0">
             <h3>Products</h3>
             <ul>
               <li><a href="#" class="text-xs text-gray-500">Support</a></li>
@@ -621,7 +624,7 @@
               <li><a href="#" class="text-xs text-gray-500">Delivery</a></li>
             </ul>
           </div>
-          <div>
+          <div class="mb-5 md:mb-0">
             <h3>Oders</h3>
             <ul>
               <li><a href="#" class="text-xs text-gray-500">Status</a></li>
@@ -630,7 +633,7 @@
               <li><a href="#" class="text-xs text-gray-500">Discount</a></li>
             </ul>
           </div>
-          <div>
+          <div class="mb-5 md:mb-0">
             <h3>Payment Methods</h3>
             <div class="grid grid-cols-2 gap-5">
               <img src="../dist/img/mastercard.jpeg" class="h-14" alt="mastercard">
